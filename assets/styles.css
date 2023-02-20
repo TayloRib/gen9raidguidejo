@@ -151,15 +151,16 @@ td.pokebut {
   line-height: 1.8;
 }
 
-.pokenav a {
+.pokenav a, .pokenav a:visited  {
   display:block;
   color: #bfd6b7;
   text-decoration: none;
   font-size: 16px;
 }
 
-.pokebut:hover {
+.pokebut2:hover {
   background-color: #325f2e;
+  border-radius: 10px;
   color: #bfd6b7;
 }
 
@@ -211,7 +212,7 @@ h2 {
 }
 
 .navsprite {
-  background-color: #81c5e0;
+  background-color: #bfd6b7;
   border-radius: 50px;
   border: 2px solid black;
 }
@@ -522,6 +523,18 @@ td.pokename {
     width: 50px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a:hover {
+    color: #207c0e;
   }
 
 
