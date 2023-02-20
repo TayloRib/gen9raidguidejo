@@ -9,8 +9,7 @@ body {
   font-size: 20px;
 }
 
-
-#navbar {
+#navbar{
   font-size: 0.9em;
   position: fixed;
   min-width: 200px;
@@ -24,7 +23,7 @@ body {
 }
 
 .navbar:hover{
-  background-color: #3b6437;
+  background-color: #325f2e;
 }
 
 #navbar ul {
@@ -38,26 +37,57 @@ body {
   border-top: 3px solid #021b00;
 }
 
-.navbar2{
+.navbar2 {
   border-top: 3px solid #021b00;
   border-bottom: 3px solid #021b00;
+}
+
+.navbar3 {
+  border-top: 3px solid #021b00;
+  border-left: 3px solid #021b00;
+  max-width: 120px;
+  min-width: 120px;
+  background-color: #4d7e49;
+  line-height: 1.2;
+}
+
+.navbar4 {
+  border: none;
+  border-left: 3px solid #021b00;
+  max-width: 120px;
+  min-width: 120px;
+  background-color: #4d7e49;
+  line-height: 1.2;
+}
+
+.navbar5 {
+  border-top: 3px solid #021b00;
+  border-bottom: 3px solid #021b00;
+  border-left: 3px solid #021b00;
+  max-width: 120px;
+  min-width: 120px;
+  background-color: #4d7e49;
+  line-height: 1.2;
+
+}
+
+#navbar a, #navtable a {
+  cursor: pointer;
 }
 
 #navbar a, #navtable a{
   display: block;
   color: #bfd6b7;
   text-decoration: none;
-  cursor: pointer;
   font-size: 16px;
 }
 
-#navbar a{
+#navbar a, .dropbtn{
   padding: 10px 30px;
 }
 
-#navtable{
+#navtable {
   width: 100%;
-  color: #bfd6b7;
   text-align: center;
   align-items: center;
   font-size: small;
@@ -68,7 +98,63 @@ body {
 
 #navtable td{
   border: 2px solid #021b00;
-  background-color: #184d24;
+  background-color: rgb(16, 70, 13);
+}
+
+button.navbar1 {
+  min-width: 200px;
+  border-bottom: 3px solid #021b00;
+  background-color: rgb(16, 70, 13);
+  font-family: "calibri", Arial, sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
+button.navbar1 {
+  padding: 0;
+}
+
+.dropdown {
+  display: inline-block;
+  justify-content: flex-end;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #65a75f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+button#abilities {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  background-color: #104905;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: #bfd6b7;
+  cursor: pointer;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
 }
 
 img.pikapicnic {
@@ -96,30 +182,17 @@ img.anniraid{
   position: static;
   line-height: .8;
   padding-bottom: 10px;
-}
-
-h1{
-  color: #bfd6b7;
-  font-weight: normal;
-  text-align: center;
-  font-family: "bahnschrift";
-  font-size: 2em;
-  line-height: 1;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-
+  z-index: -1;
 }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #adadad;
+  border-top: 1px solid #bfd6b7;
   margin-top: -20px;
   margin-left: -20px;
   padding: 0;
-  color: #bfd6b7;
 }
 
 hr.dividerclear {
@@ -139,14 +212,21 @@ h3{
 
 h2 {
   margin-right: initial;
-  color: #bfd6b7;
+  color: #cccccc;
   margin-left: -20px;
   font-weight: 500;
+  margin-top: -10px;
+  font-weight: bold;
 }
 
-hr {
+hr.hr1 {
   margin-bottom: 40px;
   color: #bfd6b7;
+}
+
+hr.hr2 {
+  color: #bfd6b7;
+  margin-top: 10px;
 }
 
 #main-doc {
@@ -157,8 +237,13 @@ hr {
   padding: 20px 90px;
 }
 
-p {
+p.pokenames {
+  height: 15px;
+}
+
+p.pokemargin {
     text-align: justify;
+    height: 20px;
   }
   
   a:link {
@@ -175,9 +260,9 @@ p {
   }
 
 table#raidmon {
-  background-color: #3b6437;
-  border-radius: 30px;
-  border: 4px solid black;
+  background-color: #104905;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
   table#raidmon, table#info, table#info2 {
@@ -187,7 +272,7 @@ table#raidmon {
     border-spacing: 0;
     font-size: 16px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   table#raidmon2 {
@@ -197,16 +282,16 @@ table#raidmon {
     border-spacing: 0;
     font-size: 16px;
     width: 100%;
-    margin-bottom: 10px;
-    background-color: #3b6437;
-    border-radius: 30px;
-    border: 4px solid black;
+    margin-bottom: 15px;
+    background-color: #104905;
+    border-radius: 5px;
+    border: 2px solid black;
     padding: 20px;
   }
 
   td.movetitle {
     font-size: large;
-    border-bottom: 2px solid #021b00;
+    border-bottom: 3px solid #021b00;
     background-color: #c3d5c0;
     line-height: 1;
     margin-bottom: 0;
@@ -219,15 +304,15 @@ table#raidmon {
     padding-bottom: 15px;
     line-height: .5;
     text-align: left;
-    border-top: 4px solid black;
+    border-top: 3px solid black;
     padding-top: 15px;
     font-size: x-large;
-    border-bottom: 2px solid #021b00;
+    border-bottom: 3px solid #021b00;
   }
 
   td.movetitle3 {
     font-size: large;
-    border-bottom: 2px solid #021b00;
+    border-bottom: 3px solid #021b00;
     background-color: #c3d5c0;
     line-height: 2;
   }
@@ -239,7 +324,7 @@ table#raidmon {
     text-align: left;
     padding-top: 15px;
     font-size: x-large;
-    border-bottom: 2px solid #021b00;
+    border-bottom: 3px solid #021b00;
   }
 
   table#info2 {
@@ -297,7 +382,7 @@ td.pokename {
     line-height: 2;
     padding-left: 20px;
     background-color: #c3d5c0;
-    border-bottom: 4px solid black;
+    border-bottom: 3px solid black;
     padding-bottom: 15px;
   }
 
@@ -305,7 +390,7 @@ td.pokename {
     line-height: 1.3;
     padding-left: 20px;
     background-color: #c3d5c0;
-    border-bottom: 4px solid black;
+    border-bottom: 3px solid black;
     padding-bottom: 15px;
   }
 
@@ -338,8 +423,8 @@ td.pokename {
   .bordertopleft {
     background-color: #c3d5c0;
     text-align: center;
-    border-top: 4px solid black;
-    border-left: 4px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     border-radius: 15px 0px 0px 0px;
     line-height: .8;
     padding: 10px;
@@ -348,8 +433,8 @@ td.pokename {
   .bordertopright {
     background-color: #c3d5c0;
     text-align: center;
-    border-top: 4px solid black;
-    border-right: 4px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
     border-radius: 0px 15px 0 0;
     line-height: .8;
     padding: 10px;
@@ -358,7 +443,7 @@ td.pokename {
   .borderleft {
     background-color: #c3d5c0;
     text-align: center;
-    border-left: 4px solid black;
+    border-left: 3px solid black;
     line-height: .8;
     padding: 10px;
   }
@@ -366,7 +451,7 @@ td.pokename {
   .borderright {
     background-color: #c3d5c0;
     text-align: center;
-    border-right: 4px solid black;
+    border-right: 3px solid black;
     line-height: .8;
     padding: 10px;
   }
@@ -374,8 +459,8 @@ td.pokename {
   .borderbottomleft {
     background-color: #c3d5c0;
     text-align: center;
-    border-left: 4px solid black;
-    border-bottom: 4px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
     border-radius: 0px 0px 0px 15px;
     line-height: .8;
     padding: 10px;
@@ -384,8 +469,8 @@ td.pokename {
   .borderbottomright {
     background-color: #c3d5c0;
     text-align: center;
-    border-right: 4px solid black;
-    border-bottom: 4px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
     border-radius: 0px 0px 15px 0px;
     line-height: .8;
     padding: 10px;
@@ -430,6 +515,23 @@ td.pokename {
     line-height: 1;
     padding-top: 5px;
     margin-left: 20px;
+  }
+
+  table.herba{
+    width: 100%;
+  }
+  
+  .herbam {
+  line-height: 1;
+  text-align: center;
+  }
+
+  .herba-sprite {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
