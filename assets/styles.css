@@ -545,18 +545,81 @@ td.pokename {
     }
   
     #navbar {
-      background-color: #184d24;
-      color: #b5ecaf;
       position: absolute;
       top: 0;
       padding: 0;
       margin: 0;
-      width: 100%;
       max-height: 39%;
       border: none;
       z-index: 1;
     }
-  
+
+    #navtable2 {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      font-size: small;
+      line-height: 2;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: auto;
+      margin-right: auto;
+      border-spacing: 10px;
+    }
+
+    #navtable2 td {
+      background-color: rgb(39, 109, 35);
+      font-size: 14px;
+      line-height: 2;
+      margin-left: 2px;
+      padding: 0;
+      border: 2px solid #021b00;
+      height: 30px;
+    }
+
+    button#az {
+      background-color: rgb(16, 70, 13);
+      color: #bfd6b7;
+      font-size: 0.7em;
+      cursor: pointer;
+      border: 2px solid #021b00;
+      width: 99%;
+      text-align: center;
+      line-height: 2;
+      margin-left: 2px;
+      max-height: 39%;
+      padding: 0;
+      margin-top: 2px;
+    }
+
+    a.aandz {
+      display: block;
+      color: #bfd6b7;
+      text-decoration: none;
+      padding: 0;
+    }
+
+    a.aandz:hover {
+      display: block;
+      color: black;
+      text-decoration: none;
+      background-color: #6eaf68;
+    }
+    
+    .dropdown-content2 {
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .dropdown2:hover .dropdown-content2 {
+      display: flex;
+    }
+
+    td.navbar {
+      background-color: rgb(16, 70, 13);
+    }
+
     .mobileonly{
       display: relative;
     }
@@ -570,20 +633,31 @@ td.pokename {
   
     img.anniraid{
       display: inline-block;
-      max-height: 80%;
-      width: 100%;
       position: relative;
       border-bottom: 1px solid rgb(110, 110, 110);
       border-top: 1px solid #858585;
     }
+
+    #mobilesprite {
+      display: wrap;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
   
     #main-mobile {
+      font-size: 12px;
       position: relative;
       font-family: "calibri", Arial, sans-serif;
       max-width: 100%;
       margin-top: 0px;
       margin-right: 1%;
-      padding: 10px 5px;
+      padding: 10px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: xx-large;
     }
   
     h2 {
@@ -592,6 +666,10 @@ td.pokename {
       font-weight: 500;
       margin-left: 10px;
       margin-right: 10px;
+      text-align: center;
+      font-size: large;
+      margin-bottom: 20px;
+      margin-top: -20px;
     }
 
     hr {
@@ -599,7 +677,7 @@ td.pokename {
       height: 1px;
       border: 0;
       border-top: 1px solid #adadad;
-      margin-top: -20px;
+      margin-top: -10px;
       margin-left: 10px;
       margin-right: 10px;
       padding: 0;
@@ -608,6 +686,21 @@ td.pokename {
 
     table#info2 {
       margin-bottom: 0;
+      font-size: small;
+    }
+
+    .pokename2 {
+      line-height: .8;
+      padding: 5px;
+      text-align: center;
+      background-color: rgb(16, 70, 13);
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 20px;
+    }
+
+    b {
+      font-size: medium;
     }
 
     .nomobile {
